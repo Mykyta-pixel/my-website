@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+body{
+	display: flex;
+	flex-direction: column;
+}
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto Mono";
+}
+img{
+	border-radius: 1em;
+}
+header, main, footer, nav{
+	padding:  1em 0em 1em 10em;
+}
+footer{
+	background-color: black;
+	color: white;
+}
+.purple_on_hover:hover{
+	color: #8e44ad;
+	transition: 0.5s;
+}
+.red_on_hover:hover{
+	color: #c0392b;
+	transition: 0.5s;
+}
+.square{
+	width: 4em;
+	height: 4em;
+	position: absolute;
+	z-index: 1;
+	animation-iteration-count: infinite;
+	animation-duration: 20s;
+}
+@keyframes square_anim_1{
+  0% {background-color: #2980b9;}
+  20% {background-color: #27ae60;}
+  40% {background-color: #f1c40f;}
+  60% {background-color: #e74c3c;}
+  80% {background-color: #2980b9;}
+}
+@keyframes square_anim_2{
+  0% {background-color: #3498db;}
+  20% {background-color: #2ecc71;}
+  40% {background-color: #f39c12;}
+  60% {background-color: #c0392b;}
+  80% {background-color: #3498db;}
+}
+@keyframes line_anim{
+	0%{left: 50em;}
+	100%{left: 20em;}
+}
+.purple_on_hover:not(:hover){
+	transition: 0.5s;
+}
+.red_on_hover:not(:hover){
+	transition: 0.5s;
+}
+.left_text{
+	float: left;
+	margin-right: 2em;
+}
+a{
+	color: dimgray;
+}
+.button{
+	border: 2px solid black;
+	color: black;
+	text-decoration: none;
+}
+.button:hover{
+	color: white;
+	background-color: #2980b9;
+	border-color: black;
+	transition: 0.5s;
+}
+.button:not(:hover){
+	color: black;
+	background-color: 0;
+	border-color: black;
+	transition: 0.5s;
+}
+ul{
+	list-style: susamogus;
+}
+.skill:hover{
+	transition: 0.5s;
+	color: white;
+	background-color: #2980b9;
+}
+.skill:not(:hover){
+	color: black;
+	padding-left: 0px;
+	transition: 0.5s;
+	background-color: 0;
+}
+th{
+	border: 2px solid black;
+  padding: 8px;
+}
+th:hover{
+	background-color: #2980b9;
+	color: white;
+	transition: 0.5s;
+	font-size: 200%;
+}
+th:not(:hover){
+	background-color: 0;
+	color: black;
+	transition: 0.5s;
+	font-size: 100%;
+}
+tr:hover{
+	background-color: #bdc3c7;
+	transition: 0.5s;
+}
+tr:not(:hover){
+	background-color: 0;
+	transition: 0.5s;
+}
+::selection {
+  color: white;
+  background: #2980b9;
+}
+.shopitem{
+	border: 2px solid black;
+	padding: 2em;
+	margin-top: 1em;
+	display: table;
+	width: 50%;
+	margin: 2em auto;
+}
+.shopimage{
+	width: 100px;
+}
+h1{
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
